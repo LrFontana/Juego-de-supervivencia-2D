@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5686230542358129001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5686230542358129000}
+  - component: {fileID: 5686230542358128982}
+  - component: {fileID: 5686230542358128983}
+  m_Layer: 0
+  m_Name: GameManagement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5686230542358129000
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5686230542358129001}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5686230542358128982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5686230542358129001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a17f545ebd71964ba06a0ac4dcebf18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoDeEsperaParaComenzarNivel: 2
+  tiempoDeTurno: 0.1
+  scripDeNivel: {fileID: 0}
+  puntosDeComidaDelJugador: 100
+  turnoDelJugador: 1
+--- !u!114 &5686230542358128983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5686230542358129001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e756c466c022b1f4d87cca26913514ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  columnas: 8
+  filas: 8
+  contadorDePared:
+    minimo: 5
+    maximo: 9
+  contadorDeComida:
+    minimo: 1
+    maximo: 5
+  salida: {fileID: 3282470359198907394, guid: cad794d03c3d6944a811b8c5daf1a414, type: 3}
+  piso:
+  - {fileID: 1869276586541580580, guid: ca5606284322ac041864c0b0421aae0a, type: 3}
+  - {fileID: 2193267692281939216, guid: 524b27dd65871944bae47bde67b6f1f8, type: 3}
+  - {fileID: 8013751941685142473, guid: 3b493b7135549934bbf88435d05c85e1, type: 3}
+  - {fileID: 5370824996933251866, guid: 6e6b1c797070f8b4983537b781af684d, type: 3}
+  - {fileID: 6648698852982713461, guid: 185a0a2faba6f454e9da59f996cf867d, type: 3}
+  - {fileID: 1517812955145543789, guid: c90eb4fa56db2d5409b4f8f880bd4d64, type: 3}
+  - {fileID: 257160952832359169, guid: a855a82e746a31443bf16f8a7edb9624, type: 3}
+  - {fileID: 5561631942758725655, guid: a32e4fe0bf4837c4ba0c51c52057d77e, type: 3}
+  paredInterior:
+  - {fileID: 5895336904566165804, guid: acbfbae5fc200ea44935e696f6be4f61, type: 3}
+  - {fileID: 3563687411536427289, guid: 191bed17975c0414a993fdae8c8b532d, type: 3}
+  - {fileID: 350862062612062242, guid: 51bfe36b9e8cd8e45959eac14a940afc, type: 3}
+  - {fileID: 7925178598489868447, guid: 3143dbb28e3aa064ea9806d18649100b, type: 3}
+  - {fileID: 7147782040224406499, guid: 2b2e6a359a715ef4c9117f90d3c88af1, type: 3}
+  - {fileID: 6506939639735235865, guid: 3e5439c2a3ddc6340b003e81323479af, type: 3}
+  - {fileID: 7603482184109071148, guid: 9e42ea23ee332d64780cb56a2270d028, type: 3}
+  - {fileID: 1545217033923576681, guid: df295f38eab1708429c26144aef9b2fa, type: 3}
+  comida:
+  - {fileID: 3736900019416086267, guid: ac9ac9b6bae4c654d84463c3b547f5ed, type: 3}
+  - {fileID: 7385606170727139059, guid: 1a6dcd1c00e7c8e43901574eebee044a, type: 3}
+  enemigo:
+  - {fileID: 8692573938981375192, guid: a2c9447012768b244a53bc7d7524f849, type: 3}
+  - {fileID: 3521549094215475917, guid: 41efa2d7a91db5b47808286441105cbb, type: 3}
+  paredExterior:
+  - {fileID: 1894893844554190532, guid: 0e91e5c91cc52814eb891adc7334327b, type: 3}
+  - {fileID: 4177148696600731450, guid: 742ca20ed1e3ca645b3f5182f651ab7d, type: 3}
+  - {fileID: 6023708391240235626, guid: 174d756952d6bcf4388f9901fea22bd8, type: 3}
